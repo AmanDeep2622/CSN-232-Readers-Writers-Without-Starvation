@@ -7,6 +7,8 @@ The readers-writers problem is a classical problem of process synchronization, o
 * Readers: They read the data from the shared location.
 * Writers: They write the data into the shared location.
 
+ - - - -
+ 
 But the problem for starvation arises, but what exactly is starvation?
 
 `Starvation` is when a process does not get the resources 	because the resource is being used by another processes for a significant time. This makes the process to wait forever and starve.
@@ -111,8 +113,8 @@ We introduced a new semaphore `readers_mutex`, rest of the variables are same as
 
 ### Counter
  * `Int Count`- It counts the number of readers. It's initial value is 0, i.e. `count=0` intially.
-
-
+  
+ 
 ## Implementaion without Starvation:- 
 ### Readers:
 
